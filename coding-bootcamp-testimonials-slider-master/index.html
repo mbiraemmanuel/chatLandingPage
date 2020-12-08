@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <img src="./images/pattern-quotes.svg" alt="" class="background quotes">
+    <img src="./images/pattern-bg.svg" alt="" class="background bg ">
+    <img src="./images/pattern-curve.svg" alt="" class="background curve">
+    <div class="box">
+    <div class="right">
+      <blockquote cite="">
+        <p id="paragraph"></p>
+        <cite id="name"></cite>
+        <span class="space"> <br> </span>
+        <span class="text" id="proff"></span>
+      </blockquote>
+    </div>
+    <div class="image">
+      <img src="" alt="" class="profile" id="photo">
+      <div class="buttons">
+        <button type="button" onclick="prev()" name="button"><img src="./images/icon-prev.svg" alt="Previous"></button>
+        <button type="button" onclick="next()" name="button"> <img src="./images/icon-next.svg" alt="Next"> </button>
+      </div>
+
+    </div>
+    <script type="text/javascript">
+
+
+      document.addEventListener('DOMContentLoaded', (event) => {
+
+        document.getElementById("paragraph").innerHTML=("“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”");
+        document.getElementById("name").innerHTML=("Tanya Sinclair");
+        document.getElementById("proff").innerHTML=("UX Engineer");
+        document.getElementById("photo").src=("./images/image-tanya.jpg");
+
+      });
+      function next() {
+
+          document.getElementById("paragraph").innerHTML=("“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”");
+          document.getElementById("name").innerHTML=("John Tarkpor");
+          document.getElementById("proff").innerHTML=("Junior Front-end Developer");
+          document.getElementById("photo").src=("./images/image-john.jpg");
+
+      }
+      function prev(){
+            document.getElementById("paragraph").innerHTML=("“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”");
+            document.getElementById("name").innerHTML=("Tanya Sinclair");
+            document.getElementById("proff").innerHTML=("UX Engineer");
+            document.getElementById("photo").src=("./images/image-tanya.jpg");
+
+
+        }
+
+    </script>
+
+  </div>
+  </div>
+  <!-- “ I’ve been interested in coding for a while but never taken the jump, until now.
+  I couldn’t recommend this course enough. I’m now in the job of my dreams and so
+  excited about the future. ”
+
+  Tanya Sinclair
+  UX Engineer
+
+  “ If you want to lay the best foundation possible I’d recommend taking this course.
+  The depth the instructors go into is incredible. I now feel so confident about
+  starting up as a professional developer. ”
+
+  John Tarkpor
+  Junior Front-end Developer -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Emmanuel Maina</a>.
+  </div>
+</body>
+</html>

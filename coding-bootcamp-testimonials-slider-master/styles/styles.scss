@@ -1,0 +1,193 @@
+body {
+    // background: #F6F4F3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
+    text-rendering: optimizeLegibility;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+  margin:60px auto;
+  position: relative;
+}
+.box{
+  position: relative;
+  display: flex;
+  width: 810px;
+  height: 440px;
+  padding-left: 28px;
+  // background: #F6F4F3;
+  margin-left: 158px;
+  top:52px;
+}
+cite{
+  font-weight: bold;
+
+}
+.right{
+  // width:75%;
+  display: inline-block;
+  display: flex;
+  padding-top: 128px;
+  width: 432.8px;
+  z-index: 2;
+
+
+
+}
+.image{
+  // width: 30%;
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+  height: 100%;
+  right:0;
+}
+.profile{
+  height: 405px;
+  object-fit: contain;
+  border-radius: 5px;
+  // box-shadow: 16px 9px 14px 8px rgb(237, 235, 235);
+  position: relative;
+}
+.text{
+  color: hsl(240, 18%, 77%);
+}
+.buttons{
+  position: absolute;
+  left: 10%;
+  /* width: 70px; */
+  bottom: 13px;
+  background: white;
+  border-radius: 30px;
+  font-size: x-small;
+  // cursor: pointer;
+}
+button:focus{
+  outline: none;
+}
+button{
+  background: white;
+  border: none;
+  border-radius: 30px;
+  margin:12px;
+  cursor: pointer
+
+}
+.space{
+  display: none
+}
+.background{
+  position: absolute;
+  z-index: 1;
+}
+ .bg{
+   height: 500px;
+   object-fit: contain;
+   right: 0;
+ }
+ .quotes{
+   height: 100px;
+ }
+
+ .curve{
+   bottom: -59px;
+   left: 0;
+ }
+
+@media screen and (max-width:1000px){
+  .box{
+    position: relative;
+    display: flex;
+    width: 375px;
+    height: 577px;
+    padding-left: 28px;
+    // background: #F6F4F3;
+    margin-left: 0px;
+    text-align: center;
+    margin-left: 25%;
+  }
+  cite{
+    font-weight: bold;
+
+  }
+  .right{
+    // width:75%;
+    display: inline-block;
+    display: flex;
+    position: absolute;
+    padding-top: 0;
+    width: 278.8px;
+    z-index: 2;
+    bottom: 0;
+
+
+
+
+  }
+  .image{
+    // width: 30%;
+    position:absolute;
+    display: inline-block;
+    z-index: 1;
+    width: 360px;
+    object-fit: contain;
+    top:0;
+    height: 285px
+  }
+  .profile{
+    height: 280px;
+    object-fit: contain;
+    border-radius: 5px;
+    // box-shadow: 16px 9px 14px 8px rgb(237, 235, 235);
+    position: relative;
+    left: -28px;
+  }
+  .text{
+    color: hsl(240, 18%, 77%);
+  }
+  .text:before { content: '\A'; }
+  .buttons{
+    position: absolute;
+    left: 25%;
+    /* width: 70px; */
+    bottom: -14px;
+    background: white;
+    border-radius: 30px;
+    font-size: x-small;
+    cursor: pointer;
+  }
+  button:focus{
+    outline: none;
+  }
+  button{
+    background: white;
+    border: none;
+    border-radius: 30px;
+    margin:12px;
+    cursor: pointer;
+  }
+  .space{
+    display: contents;
+  }
+  .background{
+    position: absolute;
+    z-index: 1;
+  }
+   .bg{
+     height: 363px;
+     object-fit: contain;
+     right: 28%;
+   }
+   .quotes{
+     height: 100px;
+     bottom: 91px;
+     right: 42%
+
+   }
+
+   .curve{
+     bottom: -50px;
+     left: 0;
+   }
+
+}
