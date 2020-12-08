@@ -1,0 +1,230 @@
+body {
+  background: #f5f3f7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
+  text-rendering: optimizeLegibility;
+  font-family: 'Rubik', sans-serif; }
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto; }
+
+.main::before {
+  position: absolute;
+  top: 0;
+  width: 444px;
+  display: block;
+  height: 677px;
+  content: '';
+  background-image: linear-gradient(-120deg, #e942ff, #8838ff);
+  background-size: 200%;
+  border-radius: 0 0 25em 25em;
+  z-index: -2; }
+
+.phone {
+  border: 10px solid white;
+  border-radius: 30px;
+  width: 318px;
+  min-width: 318px;
+  height: 110px;
+  min-height: 560px;
+  margin-left: 387px;
+  background: #eceaee;
+  box-shadow: 6px 14px 22px #000010; }
+
+.header {
+  background-image: linear-gradient(to right, #8838ff, #e942ff);
+  color: white;
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px 20px 0 0; }
+
+.header:before {
+  background: white;
+  width: 176px;
+  align-items: center;
+  height: 10px;
+  padding: 10px;
+  content: '';
+  top: 110px;
+  margin-left: 62px;
+  border-radius: 0 0 14px 14px;
+  position: absolute; }
+
+.text {
+  padding-left: 5px;
+  padding-top: 5px;
+  margin: 10px;
+  position: relative;
+  display: block;
+  font-size: .8em;
+  margin-left: 2px;
+  /* display: inline; */ }
+  .text p {
+    margin: 0px;
+    padding: 0;
+    font-size: 10px; }
+  .text strong {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-weight: bold; }
+
+.ProfilePicture {
+  border-radius: 40px;
+  width: 40px;
+  object-fit: contain;
+  border: 2px solid white;
+  padding: 0 0 0 0 !important;
+  margin-top: 5px !important;
+  margin: 0;
+  margin-right: 0px; }
+
+.left {
+  display: flex;
+  /* position: absolute; */
+  align-items: center; }
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px auto;
+  width: 100%;
+  position: relative; }
+
+.right-side {
+  float: right;
+  border-radius: 10px 10px 0 10px;
+  max-width: 60%;
+  background: white; }
+
+.left-side {
+  float: left;
+  border-radius: 10px 10px 10px 0;
+  max-width: 60%;
+  background: #f5f3f7;
+  margin-left: 10px; }
+
+.chats {
+  height: 77%;
+  width: 100%;
+  display: block;
+  padding-top: 0 !important;
+  margin: 0 !important;
+  padding: 15px;
+  padding-bottom: 0 !important; }
+
+.image {
+  height: 60x;
+  width: 60px;
+  padding: 5px;
+  border-radius: 15px;
+  position: relative;
+  padding: 4px;
+  margin: 4px; }
+
+.images {
+  display: flex;
+  float: right;
+  margin-right: 1px; }
+
+.wrap {
+  background: white;
+  bottom: 5px;
+  width: 87%;
+  margin: auto;
+  border-radius: 40px;
+  height: 35px; }
+
+.send {
+  display: flex;
+  border-radius: 40px; }
+  .send input {
+    width: 87%;
+    padding-left: 15px;
+    font-size: 15px;
+    color: black; }
+  .send input:focus {
+    outline: none; }
+  .send i {
+    font-size: 2.3rem; }
+
+.sendbutton {
+  right: 0;
+  border-radius: 40px;
+  background: black;
+  color: white;
+  height: 35px;
+  width: 34px; }
+
+.row {
+  height: 100%; }
+
+input {
+  border: none;
+  border-radius: 25px; }
+
+.chatbox {
+  border: 2px solid white;
+  display: flex !important;
+  color: #9241c8;
+  position: relative;
+  padding: 4px 14px;
+  margin: 4px 1px;
+  padding-bottom: 1px;
+  font-size: 9px; }
+
+.money {
+  font-size: 15px;
+  padding: 1px 14px;
+  display: block;
+  /* float: right; */
+  /* position: relative; */ }
+
+.test {
+  color: white;
+  display: block;
+  font-size: 10px;
+  padding-top: 8px;
+  margin-right: 15px !important;
+  position: relative !important;
+  background-image: linear-gradient(to left, #8838ff, #e942ff) !important; }
+  .test input {
+    padding: 10px;
+    display: block; }
+    .test input span {
+      display: block; }
+
+@media screen and (min-width: 1000px) {
+  .paragraph {
+    place-items: center;
+    padding-top: 206px;
+    max-width: 510px;
+    margin-left: 80px !important;
+    margin: 20px; }
+    .paragraph h2 {
+      align-items: center; }
+
+  .text-side::after {
+    position: absolute;
+    bottom: 0;
+    width: 462px;
+    display: block;
+    right: 0;
+    height: 677px;
+    content: '';
+    background-image: linear-gradient(-120deg, #faedfc, #ede1ff);
+    background-size: 200%;
+    border-radius: 25em 25em 0 0;
+    z-index: -2; } }
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }
+
+/*# sourceMappingURL=index.css.map */
